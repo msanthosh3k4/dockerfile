@@ -4,5 +4,5 @@ ENV course="Devops" \
     trainer="santhosh" \
     duriation="120"
 ARG USERNAME=SANTHOSH
-RUN echo "hello user is ${USERNAME}" > /tmp/dev.txt
+RUN echo "hello user is ${USERNAME},image version is ${version}" > /tmp/dev.txt
 CMD ["sleep","100"]
