@@ -1,1 +1,3 @@
-<h1>Hi IM working on deployment version v1</h1>
+FROM nginx
+RUN rm -f /usr/share/nginx/html/index.html
+COPY index.html /usr/share/nginx/html/index.html
